@@ -11,6 +11,7 @@ Shading shading;
 Flash flash;
 Buttons buttons;
 Crop crop;
+Signature signature;
 
 // Customization Options - Define in setup()
 color optBgC;
@@ -32,6 +33,7 @@ color optFlashHighlightC;
 color optLensGlareC;
 color optCameraBodyShadow;
 color optCropC;
+String optSignature;
 
 // Setup
 void setup() {
@@ -60,7 +62,8 @@ void setup() {
   optCameraBodyShadow = color( 0, 0, 0, 76); // color of lens reflection color( 0-255, 0-255, 0-255, 0-255 )
   // Crop marks
   optCropC = ( #000000 );
-
+  // Signature
+  optSignature = "Alan McGinnis - 2018";
 
   size(612,1008); // canvas size in px ( 8.5 in. X 14in. )
   noLoop(); // loop only once
@@ -77,6 +80,8 @@ void setup() {
   buttons = new Buttons( optButtonOneC, optButtonTwoC );
   // Crop()
   crop = new Crop( optCropC );
+  // Signature()
+  signature = new Signature( optSignature );
   beginRecord( PDF, "cameraOne.pdf" );
 }
 
@@ -91,5 +96,6 @@ void draw(){
   crop.compose();
   // set body psuedo stroke
   lenses.lensOnePsuedoStroke(); // called separately to sit on top layer
+  signature.compose();
   endRecord();
 }

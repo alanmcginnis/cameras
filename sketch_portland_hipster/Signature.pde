@@ -4,9 +4,9 @@ class Signature{
   PFont f;
   String signature;
   int year;
-  Signature( String signatureOpt ){
+  Signature( String optSignature ){
     f = createFont("FiraCode-Regular", 12);
-    signature = signatureOpt;
+    signature = optSignature;
     year = year();
   }
   void signature(){

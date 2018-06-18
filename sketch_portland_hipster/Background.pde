@@ -24,9 +24,12 @@ class Background{
     bgAccRectDeg = 315; // The angle of the rotated rectangle in deg out of 360
   }
 
-  void compose(){
-    pushMatrix(); // restrict settings to just this instance
+  void background(){
     background( bgC ); // color of the background
+  }
+
+  void backgroundRect(){
+    pushMatrix(); // restrict settings to just this instance
     noStroke(); // no outline
     fill( bgAccRectC ); // set the color of the accent rectangle
     rectMode( CENTER ); // set axis to center point of the rectangle
@@ -34,6 +37,11 @@ class Background{
     rotate( radians( bgAccRectDeg ) ); // rotate the accent rectangle
     rect( bgAccRectX, bgAccRectY, bgAccRectW, bgAccRectH ); // draw the accent rectangle
     popMatrix();
+  }
+
+  void compose(){
+    background();
+    backgroundRect();
   }
 
 }

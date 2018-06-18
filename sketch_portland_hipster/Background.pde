@@ -24,7 +24,7 @@ class Background{
     bgAccRectDeg = 315; // The angle of the rotated rectangle in deg out of 360
   }
 
-  void background(){
+  void bg(){
     background( bgC ); // color of the background
   }
 
@@ -40,7 +40,7 @@ class Background{
   }
 
   void compose(){
-    background();
+    bg();
     backgroundRect();
   }
 

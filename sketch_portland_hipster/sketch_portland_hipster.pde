@@ -62,8 +62,8 @@ void setup() {
   optCameraBodyShadow = color( 0, 0, 0, 76); // color of lens reflection color( 0-255, 0-255, 0-255, 0-255 )
   // Crop marks
   optCropC = ( #000000 );
-  // Signature
-  optSignature = "Alan McGinnis - 2018";
+  // Signature - Year automatically added
+  optSignature = "Alan McGinnis - ";
 
   size(612,1008); // canvas size in px ( 8.5 in. X 14in. )
   noLoop(); // loop only once

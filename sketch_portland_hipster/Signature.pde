@@ -2,14 +2,16 @@
 
 class Signature{
   PFont f;
-  String signatureOPT;
-  Signature( String signature ){
+  String signature;
+  int year;
+  Signature( String signatureOpt ){
     f = createFont("FiraCode-Regular", 12);
-    signatureOPT = signature;
+    signature = signatureOpt;
+    year = year();
   }
   void signature(){
     textFont(f);
-    text( signatureOPT, 298, 629 );
+    text( signature + year, 298, 629 );
   }
   void compose(){
     signature();

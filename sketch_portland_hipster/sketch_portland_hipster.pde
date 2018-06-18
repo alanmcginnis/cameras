@@ -39,10 +39,10 @@ String optSignature;
 void setup() {
   // Background color options
   optBgC = color( #ffffff ); // color of the canvas background
-  optBgRectC = color( #50c2ba ); // color of the background rectangle
+  optBgRectC = color( #29bec5 ); // color of the background rectangle
   // Camera Body color options
-  optCameraBodyC = color( #fffbe4 ); // color of the camera body
-  optCameraBodyAccentC = color( #f2634c ); // color of the camera accent (stripe accross the middle)
+  optCameraBodyC = color( #f2edd9 ); // color of the camera body
+  optCameraBodyAccentC = color( #f26335 ); // color of the camera accent (stripe accross the middle)
   // Button color options
   optButtonOneC = color( #353230 );
   optButtonTwoC = color( #353230 );

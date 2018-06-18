@@ -134,10 +134,12 @@ class Crop{
   }
 
   void compose(){
+    // upper
     upperLeftVertCrop();
     upperLeftHorzCrop();
     upperRightVertCrop();
     upperRightHorzCrop();
+    // lower
     lowerLeftVertCrop();
     lowerLeftHorzCrop();
     lowerRightVertCrop();

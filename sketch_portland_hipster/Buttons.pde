@@ -21,12 +21,14 @@ class Buttons{
   color buttonTwoC;
 
   Buttons( color buttonOne, color buttonTwo ){
+    // button one
     buttonOneX = 54; // x position of the button one, based on px from ( 0,0 )
     buttonOneY = -90; //  y position of the button one, based on px from ( 0,0 )
     buttonOneW = 34; // width of the button one
     buttonOneH = 14; // height of the button one
     buttonOneS = 2; // stroke of the button one
     buttonOneC = buttonOne; // color of button one
+    // button two
     buttonTwoX = 103; // x position of the button two, based on px from ( 0,0 )
     buttonTwoY = -90; //  y position of the button two, based on px from ( 0,0 )
     buttonTwoW = 43; // width of the button two

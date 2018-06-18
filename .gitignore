@@ -1,3 +1,4 @@
 _assets/*
 .DS_Store
 */build/*
+*.pdf

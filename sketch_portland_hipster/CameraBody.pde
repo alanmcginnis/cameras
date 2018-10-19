@@ -1,3 +1,5 @@
+// CameraBody.pde
+
 class CameraBody{
 
   // camera body coordinates
